@@ -1,45 +1,87 @@
 body {
     background-color: #fffbf7;
-    margin: 0px;
+    margin: 0;
 }
 
 h1  {
     color:  #025157;
-    font-family: "Alegreya", serif;
-    font-size: 60px;
-    margin-bottom: 24px;
 }
 
-h4 {
+h3 {
     color: #46484c;
 }
 
 p { color: #8b8b8bcc;
 }
-.logo-matcha{
-   width: 50px;
-}
 button {
     color: #fafafa;
     background-color: #025157;
 }
-.imagen-matcha{
+.header {
+    margin: 40px  20px 0;
+    font-size: 0;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+.header li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header ul {
+    padding: 0;
+}
+.logo-matcha{
    width: 50px;
 }
 
-.header {
-    margin: 40px  20px 0;
+.imagen-matcha{
+   width: 20px;
+}
+.navbar {
+    width: 60%;
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
+}
+.actions {
+    width: 20%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+.actions a {
+    color: #67b54b;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.actions button {
+    border-radius: 5px;
+    background-color: #67b54b;
+    color: #ffffff;
+    border: none;
+    padding: 20px;
 }
 .first-img {
-    width: 30%;
+    width: 50%;
     text-align: center;
-    font-size: 0;
   }
 .intro  {
-    width: 30%;
+    width: 50%;
     text-align: center;
   }
 .main {
-    margin-top: 285px;
     text-align: center;
+}
+.main h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #025157;
 }
