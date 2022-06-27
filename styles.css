@@ -1,24 +1,39 @@
+
+
 body {
     background-color: #fffbf7;
     margin: 0;
-}
-
-h1  {
-    color:  #025157;
+    font-family: "Open Sans", sans-serif;
 }
 
 h3 {
     color: #46484c;
 }
 
-p { color: #8b8b8bcc;
+.color-gris-seccion-inicial {
+    color: #8b8b8bcc;
 }
+
 button {
-    color: #fafafa;
+    color: #ffffff;
     background-color: #025157;
 }
+
+.main-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+.main-nav-bg-color {
+    background-color: #fffbf7;
+}
+
 .header {
-    margin: 40px  20px 0;
+    margin: 40px 20px 0;
     font-size: 0;
 }
 
@@ -29,6 +44,7 @@ button {
     height: 100%;
     line-height: 45px;
 }
+
 .header li {
     display: inline;
     margin: 0 15px;
@@ -37,30 +53,35 @@ button {
 .header ul {
     padding: 0;
 }
-.logo-matcha{
-   width: 50px;
+
+.logo_matcha {
+    width: 50px;
 }
 
-.imagen-matcha{
-   width: 20px;
+.imagen_matcha {
+    width: 20%;
 }
+
 .navbar {
-    width: 60%;
+    /* width: 60%; esta propiedad se quito para funcionar con Bootstrap */
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
+
 .actions {
     width: 20%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
+
 .actions a {
     color: #67b54b;
     text-decoration: none;
     margin: 0 15px;
 }
+
 .actions button {
     border-radius: 5px;
     background-color: #67b54b;
@@ -68,20 +89,467 @@ button {
     border: none;
     padding: 20px;
 }
-.first-img {
-    width: 50%;
-    text-align: center;
-  }
-.intro  {
-    width: 50%;
-    text-align: center;
-  }
-.main {
+
+.first-image {
+    width: 20%;
     text-align: center;
 }
+
+.second-image {
+    width: 50%;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+    margin-top: 260px;
+}
+
 .main h1 {
     font-family: 'Alegreya', serif;
     font-size: 48px;
     font-weight: 900;
     color: #025157;
+}
+
+.main form input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.main form button {
+    margin-left: -15px;
+    border-radius: 5px;
+    border: none;
+    padding: 16px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.trans-boton:hover {
+    background-color: #67b54b;
+}
+
+.publish {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+
+.publish .publicidad .titulo-publish {
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #025157;
+    margin-top: 0;
+}
+
+.publish .publicidad .color-gris {
+    color: #8b8b8bcc;
+}
+
+.publish .video {
+    flex: 1;
+}
+
+.publish .video .video-contenedor {
+    width: 90%;
+}
+
+.publish .video .video-contenedor .cuadro-video {
+    width: 100%;
+}
+
+.publish .video .see-how-it-works {
+    display: flex;
+    justify-content: center;
+}
+
+.publish .video .see-how-it-works .green-arrow {
+    width: 50px;
+}
+
+.publish .publicidad {
+    flex: 1;
+}
+
+.features {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    /*height: 600px;    **hace que se desborde hacia abajo al redudir*/
+    background-color: #025157;
+    padding: 5% 10%;
+}
+
+.feature-card {
+    margin: 0 15px 20px;
+}
+
+.feature-content {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.feature-content .feature-text {
+    flex: 2;
+    padding: 15px 20px;
+}
+
+.feature-content .feature-text h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.feature-content .feature-text p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+.feature-content .feature-text a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.feature-text figure {
+    margin-left: 0;
+}
+
+.feature-text figure img {
+    height: 30px;
+}
+.feature-content .feature-image {
+    flex: 1
+}
+
+.feature-image figure {
+    width: 100%
+}
+
+.feature-image figure img {
+    width: 100%
+}
+
+.movimiento {
+    transition: width 1s;
+}
+
+.movimiento:hover {
+    width: 150%;
+}
+
+.container .card-body a {
+    background-color: #025157;
+}
+
+.card-container {
+    /*display: flex;*/
+    background-color: #a1d683;
+    padding: 10% 0;
+}
+
+
+.comments {
+    padding: 0 15px;
+}
+
+.comments h1 {
+    color: #025157;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Alegreya", serif;
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 61px;
+    letter-spacing: -2px;
+}
+
+.comments p {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.comments .btn-beefy {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+    height: 45px;
+    width: 166px;
+    transition: all .2s ease-in-out;
+}
+
+.comments .btn-beefy:hover {
+    background-color: #67b54b;
+    color: #fff;
+}
+
+.comments img {
+    margin: 40px 0;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.card-media {
+    height: 300px;
+    position: relative; /* funciona en funtion del position:abolute 
+    puesta en .company ya que card-media esta dentro*/
+}
+
+.card-media figure {
+    height: 100%;
+}
+
+.card-media figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.company {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 210px;
+    right: 15px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+}
+
+.card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+.results {
+    display: flex;
+}
+
+.results img {
+    width: 30px;
+    margin-right: 15px;
+    fill: #025157;
+}
+
+.results p{
+    font-size: 12px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+/* Modficiando los estilos de tarjeta del carrousel de Bootstrap */
+
+.card-footer {
+    border: none;
+    background-color: #fff;
+}
+
+.card-footer button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.try-it {
+    padding: 5% 5% 2%;
+    background-color: #96d178;
+    margin-top: -30px;
+    font-family: sans-serif;
+}
+.try-it h2 {
+    color: #025157;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "Alegreya", serif;
+}
+.try-it form {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.how-does-it-work {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .how-does-it-work .title {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+  }
+
+  .how-does-it-work .description {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .how-does-it-work .description a {
+    color: #67b54b;
+    text-decoration: none;
+  }
+
+  .how-does-it-work button {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+    padding: 6px 20px;
+  }
+
+  .how-does-it-work .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .how-does-it-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-image {
+    position: relative;
+    height: 350px;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-image .card-step-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-body {
+    padding: 25px;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+  }
+
+  .how-does-it-work .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+/* Media queries */
+
+@media screen and (max-width: 426px) {
+    .main form {
+        margin-bottom: 25px;
+    }
+
+    .color-gris-seccion-inicial {
+        margin: 0;
+    }
+
+    .first-image {
+        width: 70%;
+    }
+
+    .second-image {
+        width: 100%;
+    }
+
+    /* .navbar,
+    .actions {
+        display: none;
+    } Esto se elimino para usar bo0otstrap*/
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .publish {
+        flex-direction: column;
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .features {
+        height: fit-content;
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
 }
